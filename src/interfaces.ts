@@ -80,11 +80,11 @@ export interface IToggleStickyNote {
 }
 
 export enum ColorOptions {
-  Yellow = "#feff9c",
-  Green = "#d1fae5",
-  Pink = "#f6ccd7",
-  Purple = "#e0bbff",
-  Blue = "#a7cdfa",
+  pastelPink= '#FFE3E5',
+  pastelYellow= '#FBF8CC',
+  pastelGreen= '#B9FBC0',
+  pastelBlue= '#8EECF5',
+  pastelPurple= '#CFBAF0',
 }
 
 export interface ITask {
