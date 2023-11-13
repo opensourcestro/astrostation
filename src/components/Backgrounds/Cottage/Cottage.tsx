@@ -1,5 +1,5 @@
 import "../Backgrounds.scss";
-import cottage from "/assets/videos/cottage.mp4";
+import cottage from "/assets/videos/optimized_cottage.mp4";
 
 export const Cottage = () => {
   return (

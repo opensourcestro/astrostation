@@ -1,5 +1,5 @@
 import "../Backgrounds.scss";
-import trainVideo from "/assets/videos/train.mp4";
+import trainVideo from "/assets/videos/optimized_train.mp4";
 
 export const Train = () => {
   return (
