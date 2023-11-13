@@ -41,7 +41,7 @@ export const YoutubeVideo = () => {
       <div className="handle flex items-center justify-between p-1">
       <p className="py-2 font-bold">YouTube</p>
         <IoCloseSharp
-          className="cursor-pointer text-red hover:bg-altRed"
+          className="cursor-pointer text-red hover:bg-altRed rounded-full"
           onClick={() => setIsYoutubeToggled(false)}
         />
       </div>
