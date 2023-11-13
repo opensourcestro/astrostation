@@ -32,11 +32,11 @@ export const TwitchStream = () => {
   // The following resize fix is a thanks to adamdotjs.
   // https://play.tailwindcss.com/jp2JnWgRoW -> his solution
   return (
-    <div className="w-full resize-x justify-between overflow-auto rounded-lg bg-white/50 py-2 text-black shadow-md dark:border-altWhite/20 dark:bg-altBlack/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
-      <div className="handle flex items-center justify-between p-1">
+    <div className="w-full resize-x justify-between overflow-auto rounded-lg bg-white/50 py-4 px-4 text-altBlack shadow-md dark:border-altWhite/20 dark:bg-black/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
+     <div className="handle flex cursor-move items-center justify-between p-1">
       <p className="py-2 font-bold">Twitch</p>
         <IoCloseSharp
-          className="cursor-pointer text-red hover:bg-altRed rounded-full"
+          className="cursor-pointer text-white hover:bg-altRed rounded-full"
           onClick={() => setIsTwitchToggled(false)}
         />
       </div>
@@ -49,12 +49,12 @@ export const TwitchStream = () => {
           ></iframe>
         )}
       </div>
-      <div className="cancelDrag flex items-center space-x-1 p-1">
+      <div className="mt-2 flex items-center space-x-1 p-1">
         <input
-          className="w-full border border-black/20 p-1 dark:border-altWhite/20 dark:bg-altBlack/50"
+          className="cancelDrag w-full rounded-lg border border-black/20 p-1 placeholder-gray-600 dark:border-altWhite/20 dark:bg-altBlack/50 dark:placeholder-gray-300"
           type="text"
           value={inputText}
-          placeholder="Search stream..."
+          placeholder="Search stream"
           onChange={e => {
             setInputText(e.target.value);
           }}

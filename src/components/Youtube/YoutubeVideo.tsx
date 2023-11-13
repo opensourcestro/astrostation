@@ -37,29 +37,29 @@ export const YoutubeVideo = () => {
   };
 
   return (
-    <div className="w-full resize-x justify-between overflow-auto rounded-lg bg-white/50 py-2 text-black shadow-md dark:border-altWhite/20 dark:bg-altBlack/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
-      <div className="handle flex items-center justify-between p-1">
+    <div className="w-full resize-x justify-between overflow-auto rounded-lg bg-white/50 py-4 px-4 text-altBlack shadow-md dark:border-altWhite/60 dark:bg-black/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
+      <div className="handle flex cursor-move items-center justify-between p-1">
       <p className="py-2 font-bold">YouTube</p>
         <IoCloseSharp
-          className="cursor-pointer text-red hover:bg-altRed rounded-full"
+          className="cursor-pointer text-white hover:bg-altRed rounded-full"
           onClick={() => setIsYoutubeToggled(false)}
         />
       </div>
       <div className="relative aspect-video justify-center">
         {isYoutubeShown && isYoutubeToggled && (
           <iframe
-            className="left-0 h-full w-full"
+            className="left-0 h-full w-full justify-center"
             src={"https://www.youtube.com/embed/" + videoId}
             allowFullScreen
           ></iframe>
         )}
       </div>
-      <div className="cancelDrag flex items-center space-x-1 p-1">
+      <div className="mt-2 flex items-center space-x-1 p-1">
         <input
-          className="w-full border border-black/20 p-1 dark:border-altWhite/20 dark:bg-altBlack/50"
+          className="cancelDrag w-full rounded-lg border border-black/20 p-1 placeholder-gray-600 dark:border-altWhite/20 dark:bg-altBlack/50 dark:placeholder-gray-300"
           type="text"
           value={inputText}
-          placeholder="Paste video/playlist here..."
+          placeholder="Paste video/playlist here"
           onChange={e => {
             setInputText(e.target.value);
           }}
