@@ -10,7 +10,7 @@ module.exports = {
       altBlack: '#0C0F0A',
       altWhite: '#F8F8FF',
       red: '#BC3326',
-      altRed: '#D54134',
+      altRed: '#FF7569',
       yellow: '#FFD633',
       green: '#5BAF5A',
       altGreen: '#9ABB53',

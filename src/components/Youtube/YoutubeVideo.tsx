@@ -37,11 +37,11 @@ export const YoutubeVideo = () => {
   };
 
   return (
-    <div className="w-full resize-x justify-between overflow-auto rounded-lg bg-white/[.96] py-2 text-gray-800 shadow-md dark:border-gray-700 dark:bg-gray-800/[.96] dark:text-gray-300 sm:w-96">
+    <div className="w-full resize-x justify-between overflow-auto rounded-lg bg-white/50 py-2 text-black shadow-md dark:border-altWhite/20 dark:bg-altBlack/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
       <div className="handle flex items-center justify-between p-1">
-        <p>Youtube</p>
+      <p className="py-2 font-bold">YouTube</p>
         <IoCloseSharp
-          className="cursor-pointer text-red-500 hover:bg-red-200"
+          className="cursor-pointer text-red hover:bg-altRed"
           onClick={() => setIsYoutubeToggled(false)}
         />
       </div>
@@ -56,7 +56,7 @@ export const YoutubeVideo = () => {
       </div>
       <div className="cancelDrag flex items-center space-x-1 p-1">
         <input
-          className="w-full border border-gray-300 p-1 dark:border-gray-500 dark:bg-gray-700/[.96]"
+          className="w-full border border-black/20 p-1 dark:border-altWhite/20 dark:bg-altBlack/50"
           type="text"
           value={inputText}
           placeholder="Paste video/playlist here..."
@@ -66,7 +66,7 @@ export const YoutubeVideo = () => {
           onKeyDown={handleKeyDown}
         />
         <AiOutlineReload
-          className="w-5 cursor-pointer hover:text-slate-500"
+          className="w-5 cursor-pointer hover:text-teal"
           onClick={() => {
             handleVideoChange(inputText);
           }}
