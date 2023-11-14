@@ -36,7 +36,7 @@ export const Spotify = () => {
         <div className="handle flex cursor-move items-center justify-between p-1">
           <p className="py-2 font-bold">Spotify</p>
           <IoCloseSharp
-            className="cursor-pointer text-white hover:bg-altRed rounded-full"
+            className="cursor-pointer text-altBlack dark:text-white hover:bg-altRed rounded-full"
             onClick={() => setIsSpotifyToggled(false)}
           />
         </div>
@@ -53,7 +53,7 @@ export const Spotify = () => {
       </div>
       <div className="mt-2 flex items-center space-x-1 p-1">
         <input
-          className="cancelDrag w-full rounded-lg border border-black/20 p-1 placeholder-gray-600 dark:border-altWhite/20 dark:bg-altBlack/50 dark:placeholder-gray-300"
+          className="cancelDrag w-full rounded-lg border border-black/20 p-1  bg-white/60 placeholder-altBlack/50 dark:border-altWhite/20 dark:bg-altBlack/50 dark:placeholder-altWhite/50"
           type="text"
           value={text}
           placeholder="Paste Spotify URL here"
