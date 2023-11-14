@@ -31,7 +31,7 @@ export const Spotify = () => {
   }
 
   return (
-    <div className="mb-2 w-72 max-w-sm justify-between rounded-lg bg-white/50 py-4 px-4 text-altBlack shadow-md dark:border-altWhite/20 dark:bg-black/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
+    <div className="mb-2 w-72 max-w-sm justify-between rounded-lg border border-altWhite/20 bg-white/50 py-4 px-4 text-altBlack shadow-md dark:border-altWhite/20 dark:bg-black/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
       <WithTooltip text="Make sure to refresh after logging in">
         <div className="handle flex cursor-move items-center justify-between p-1">
           <p className="py-2 font-bold">Spotify</p>
