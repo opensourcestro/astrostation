@@ -4,7 +4,7 @@ export const CustomizationButton = props => {
     <div>
       <button
         type="button"
-        className="flex items-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm focus:outline-none dark:bg-gray-800 dark:text-gray-200"
+        className="flex items-center rounded-md bg-white/50 px-4 py-2 text-sm font-medium text-altBlack hover:bg-purple hover:text-altWhite shadow-sm focus:outline-none dark:bg-black/50 dark:text-altWhite dark:hover:bg-purple"
         onClick={() => props.changeModal(true)}
       >
         {props.title}
