@@ -11,9 +11,9 @@ export const NavItem: FC<{
       <li>
         <button
           className={clsx(
-            "relative flex h-14 items-center bg-white px-4 dark:bg-gray-800 dark:text-white sm:h-16 sm:px-6 md:hover:bg-gray-200 md:hover:dark:bg-gray-700",
+            "relative flex h-14 items-center bg-white/50 text-altBlack px-4 dark:bg-black/50 dark:text-altWhite sm:h-16 sm:px-6 md:hover:bg-purple",
             toggled &&
-              "border-b-2 border-black bg-violet-500 text-white dark:bg-violet-500 md:hover:bg-violet-400 md:hover:dark:bg-violet-400"
+              "border-b-2 border-black bg-black/50 text-altWhite dark:bg-white/50 dark:text-altBlack md:hover:bg-purple"
           )}
           onClick={onClick}
         >
