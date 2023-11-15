@@ -236,7 +236,7 @@ export const useStickyNote = create<IStickyNoteState>(
             {
               id: Date.now() + state.stickyNotes.length,
               text: text,
-              color: ColorOptions.Yellow,
+              color: ColorOptions.pastelYellow,
               stickyNotesPosX: 165,
               stickyNotesPosY: 0,
             } as IStickyNote,

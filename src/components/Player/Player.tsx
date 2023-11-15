@@ -68,8 +68,8 @@ export const Player = () => {
 
   return (
     <>
-      <div className="mb-2 w-72 rounded-lg border border-gray-200 bg-white/[.96] py-4 px-3 text-gray-800 shadow-md dark:border-gray-700 dark:bg-gray-800/[.96] dark:text-gray-300 sm:w-96 ">
-        <div className="flex items-center justify-between space-x-6">
+      <div className="mb-2 w-72 rounded-lg border border-altWhite/20 bg-white/50 py-4 px-3 text-altBlack shadow-md dark:border-altWhite/20 dark:bg-black/50 dark:text-altWhite backdrop-blur-sm sm:w-96">
+        <div className="flex items-center justify-between space-x-6 font-bold">
           <div>{song?.artist}</div>
           <div className="flex space-x-2">
             <IconContext.Provider value={{ size: "1.1rem" }}>
@@ -77,7 +77,7 @@ export const Player = () => {
             </IconContext.Provider>
             <IconContext.Provider value={{ size: "1.1rem" }}>
               <IoCloseSharp
-                className="cursor-pointer text-red-500 hover:bg-red-200"
+                className="cursor-pointer text-altBlack dark:text-white hover:bg-altRed rounded-full"
                 onClick={() => setIsMusicToggled(false)}
               />
             </IconContext.Provider>
@@ -101,15 +101,15 @@ export const Player = () => {
                 onVolumeChange(value as number);
               }}
               railStyle={{
-                backgroundColor: "#000",
+                backgroundColor: "black",
               }}
               handleStyle={{
-                backgroundColor: "#fff",
+                backgroundColor: "white",
                 opacity: 1,
-                color: "red",
+                color: "white",
               }}
               trackStyle={{
-                backgroundColor: "#fff",
+                backgroundColor: "white",
               }}
             />
           </div>
